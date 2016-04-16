@@ -11,8 +11,8 @@ import { bindActionCreators } from 'redux';
 import * as SessionActions from '../../actions/session';
 import {loginUser, logoutUser} from '../../actions/session';
 
-import { RioAboutPage } from '../about-page';
-import { RioCounterPage } from '../counter-page';
+import AboutPage from '../about';
+import CounterPage from '../counter';
 
 import {
   Button,
@@ -35,13 +35,13 @@ import {
   {
     path: '/counter',
     name: 'Counter',
-    component: RioCounterPage,
+    component: CounterPage,
     useAsDefault: true
   },
   {
     path: '/about',
     name: 'About',
-    component: RioAboutPage
+    component: AboutPage
   }
 ])
 export class App {

@@ -1,24 +1,24 @@
 import { Component, EventEmitter, Input, Output } from 'angular2/core';
 
-import { RioModal, RioModalContent } from '../modal';
-import { RioLoginForm } from './login-form';
+import { Modal, ModalContent } from '../modal';
+import { LoginForm } from './login-form';
 
 @Component({
-  selector: 'rio-login-modal',
-  directives: [RioModal, RioModalContent, RioLoginForm],
+  selector: 'login-modal',
+  directives: [Modal, ModalContent, LoginForm],
   template: `
-    <rio-modal>
-      <rio-modal-content>
+    <modal>
+      <modal-content>
         <h1 class='mt0'>Login</h1>
-        <rio-login-form
+        <login-form
           [isPending]="isPending"
           [hasError]="hasError"
-          (onSubmit)="handleSubmit($event)"></rio-login-form>
-      </rio-modal-content>
-    </rio-modal>
+          (onSubmit)="handleSubmit($event)"></login-form>
+      </modal-content>
+    </modal>
   `
 })
-export class RioLoginModal {
+export class LoginModal {
   @Input() isPending: boolean;
   @Input() hasError: boolean;
   @Output() onSubmit: EventEmitter<Object> = new EventEmitter();

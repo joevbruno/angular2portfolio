@@ -7,63 +7,63 @@ import {
   Validators
 } from 'angular2/common';
 
-import { RioForm, RioFormError, RioFormGroup, RioLabel } from '../form';
-import { RioAlert } from '../alert';
-import { RioButton } from '../button';
-import { RioInput } from '../form/input';
+import { Form, FormError, FormGroup, Label } from '../form';
+import { Alert } from '../alert';
+import { Button } from '../button';
+import { CustomInput } from '../form/input';
 
 @Component({
-  selector: 'rio-login-form',
+  selector: 'login-form',
   directives: [
-    FORM_DIRECTIVES, RioAlert, RioButton, RioInput,
-    RioForm, RioFormError, RioFormGroup, RioLabel
+    FORM_DIRECTIVES, Alert, Button, Input,
+    Form, FormError, FormGroup, Label
   ],
   template: `
-    <rio-form
+    <form
       [ngFormModel]="group"
       (ngSubmit)="handleSubmit()">
-      <rio-alert status='info' *ngIf="isPending">Loading...</rio-alert>
-      <rio-alert status='error' *ngIf="hasError">
+      <alert status='info' *ngIf="isPending">Loading...</alert>
+      <alert status='error' *ngIf="hasError">
         Invalid username and password
-      </rio-alert>
+      </alert>
 
-      <rio-form-group>
-        <rio-label>Username</rio-label>
-        <rio-input
+      <form-group>
+        <label>Username</label>
+        <input
           inputType='text'
           placeholder='Username'
-          [formControl]="username"></rio-input>
-        <rio-form-error [visible]="showNameWarning()">
+          [formControl]="username"></input>
+        <form-error [visible]="showNameWarning()">
           Username required!
-        </rio-form-error>
-      </rio-form-group>
+        </form-error>
+      </form-group>
 
-      <rio-form-group>
-        <rio-label>Password</rio-label>
-        <rio-input
+      <form-group>
+        <label>Password</label>
+        <input
           inputType='password'
           placeholder='Password'
-          [formControl]="password"></rio-input>
-        <rio-form-error [visible]="showPasswordWarning()">
+          [formControl]="password"></input>
+        <form-error [visible]="showPasswordWarning()">
           Password required!
-        </rio-form-error>
-      </rio-form-group>
+        </form-error>
+      </form-group>
 
-      <rio-form-group>
-        <rio-button
+      <form-group>
+        <button
           className="mr1"
           type="submit">
           Login
-        </rio-button>
-        <rio-button className="bg-red"
+        </button>
+        <button className="bg-red"
           (onClick)="reset()">
           Clear
-        </rio-button>
-      </rio-form-group>
-    </rio-form>
+        </button>
+      </form-group>
+    </form>
   `
 })
-export class RioLoginForm {
+export class LoginForm {
   @Input() isPending: boolean;
   @Input() hasError: boolean;
   @Output() onSubmit: EventEmitter<Object> = new EventEmitter();

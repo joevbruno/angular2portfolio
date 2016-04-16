@@ -1,11 +1,11 @@
 import { Component } from 'angular2/core';
 
 @Component({
-  selector: 'rio-label',
+  selector: 'label',
   template: `
     <label>
       <ng-content></ng-content>
     </label>
   `
 })
-export class RioLabel {};
+export class Label {};

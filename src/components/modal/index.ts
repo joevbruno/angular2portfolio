@@ -1,4 +1,4 @@
-import { RioModal } from './modal';
-import { RioModalContent } from './modal-content';
+import { Modal } from './modal';
+import { ModalContent } from './modal-content';
 
-export { RioModal, RioModalContent };
+export { Modal, ModalContent };

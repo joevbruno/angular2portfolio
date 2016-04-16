@@ -13,7 +13,7 @@ const nodeAppServer = require('./node-app-server');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// Enable various security helpers.
+// Enable vaus security helpers.
 app.use(helmet());
 
 // API proxy logic: if you need to talk to a remote server from your client-side

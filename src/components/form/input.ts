@@ -2,7 +2,7 @@ import { Component, Input } from 'angular2/core';
 import { NgFormControl } from 'angular2/common';
 
 @Component({
-  selector: 'rio-input',
+  selector: 'input',
   directives: [ NgFormControl ],
   template: `
     <input
@@ -13,7 +13,7 @@ import { NgFormControl } from 'angular2/common';
     />
   `
 })
-export class RioInput {
+export class CustomInput {
   @Input() inputType = 'text';
   @Input() placeholder = '';
   @Input() formControl: NgFormControl;

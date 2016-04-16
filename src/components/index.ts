@@ -1,34 +1,34 @@
-import { RioAlert } from './alert';
-import { RioButton } from './button';
-import { RioContainer } from './container';
-import { RioCounter } from './counter';
-import { RioLogo } from './logo';
-import { RioLoginModal, RioLoginForm } from './login';
-import { RioNavigator, RioNavigatorItem } from './navigator';
-import { RioModal, RioModalContent } from './modal';
+import { Alert } from './alert';
+import { Button } from './button';
+import { Container } from './container';
+import { Counter } from './counter';
+import { Logo } from './logo';
+import { LoginModal, LoginForm } from './login';
+import { Navigator, NavigatorItem } from './navigator';
+import { Modal, ModalContent } from './modal';
 import {
-  RioForm,
-  RioFormError,
-  RioFormGroup,
-  RioLabel,
-  RioInput
+  Form,
+  FormError,
+  FormGroup,
+  Label,
+  CustomInput
 } from './form';
 
 export {
-  RioAlert,
-  RioButton,
-  RioContainer,
-  RioCounter,
-  RioInput,
-  RioLogo,
-  RioLoginModal,
-  RioLoginForm,
-  RioForm,
-  RioFormError,
-  RioFormGroup,
-  RioLabel,
-  RioModal,
-  RioModalContent,
-  RioNavigator,
-  RioNavigatorItem
+  Alert,
+  Button,
+  Container,
+  Counter,
+  CustomInput,
+  Logo,
+  LoginModal,
+  LoginForm,
+  Form,
+  FormError,
+  FormGroup,
+  Label,
+  Modal,
+  ModalContent,
+  Navigator,
+  NavigatorItem
 };

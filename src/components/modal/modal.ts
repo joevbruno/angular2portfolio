@@ -1,7 +1,7 @@
 import { Component } from 'angular2/core';
 
 @Component({
-  selector: 'rio-modal',
+  selector: 'modal',
   styles: [require('./modal.css')],
   template: `
     <div class="fixed top-0 bottom-0 left-0 right-0 z1 bg-darken-3">
@@ -9,4 +9,4 @@ import { Component } from 'angular2/core';
     </div>
   `
 })
-export class RioModal {};
+export class Modal {};

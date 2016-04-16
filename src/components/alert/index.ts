@@ -1,7 +1,7 @@
 import { Component, Input } from 'angular2/core';
 
 @Component({
-  selector: 'rio-alert',
+  selector: 'alert',
   template: `
     <div class="p2 bold"
       [ngClass]="{
@@ -15,6 +15,6 @@ import { Component, Input } from 'angular2/core';
     </div>
   `
 })
-export class RioAlert {
+export class Alert {
   @Input() status = 'info';
 };

@@ -1,4 +1,4 @@
-// Types for various development options.
+// Types for vaus development options.
 
 // A global boolean that turns on or off devmode in the client.
 declare let __DEV__: boolean;

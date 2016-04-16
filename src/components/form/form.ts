@@ -1,11 +1,11 @@
 import { Component } from 'angular2/core';
 
 @Component({
-  selector: 'rio-form',
+  selector: 'form',
   template: `
     <form>
       <ng-content></ng-content>
     </form>
   `
 })
-export class RioForm {};
+export class Form {};

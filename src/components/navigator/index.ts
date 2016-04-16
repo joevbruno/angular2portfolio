@@ -1,4 +1,4 @@
-import { RioNavigator } from './navigator';
-import { RioNavigatorItem } from './navigator-item';
+import { Navigator } from './navigator';
+import { NavigatorItem } from './navigator-item';
 
-export { RioNavigator, RioNavigatorItem };
+export { Navigator, NavigatorItem };
